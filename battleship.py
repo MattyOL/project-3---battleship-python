@@ -3,22 +3,22 @@ def get_shot(guesses):
     ok = "n"
     while ok == "n":
         try:
-            shot = input("please enter ur guess")
+            shot = input("Please enter ur guess?")
             shot = int(shot)
             if shot < 0 or shot > 99:
-                print("incorrect number, please try again")
+                print("Incorrect number, Please try again")
             elif shot in guesses:
-                print("incorrect number, used befor")
+                print("Incorrect number, used before")
             else:
                 ok = 'y'
                 break
         except:
-            print("incorrect entry, please enter again")
+            print("Incorrect entry, Please enter again")
     return shot
 
 def show_board(hit,miss,comp):
-    print("         battleships   ")
-    print("    0 1 2 3 4 5 6 7 8 9")
+    print("         Battleships   ")
+    print("    0 1 2 3 4 5 6 7 8 9  ")
 
 
     place = 0
@@ -29,46 +29,46 @@ def show_board(hit,miss,comp):
             if place in miss:
                 ch = " x "
             elif place in hit:
-                ch = " o "
+                ch = " s "
             elif place in comp:
-                ch = " O "
+                ch = " S "
 
             row = row + ch
             place = place + 1 
         print(x," ",row)
 
-def check_shot(shot,boat1,boat2,hit,miss,comp):
+def check_shot(shot,ship1,ship2,hit,miss,comp):
 
-    if shot in boat1:
-        boat1.remove(shot)
-        if len(boat1) > 0:
+    if shot in ship1:
+        ship1.remove(shot)
+        if len(ship1) > 0:
             hit.append(shot)
         else:
             comp.append(shot)
-    elif shot in boat2:
-        boat2.remove(shot)
-        if len(boat2) > 0:
+    elif shot in ship2:
+        ship2.remove(shot)
+        if len(ship2) > 0:
             hit.append(shot)
         else:
             comp.append(shot)
     else:
         miss.append(shot)
-    return boat1,boat2,hit,miss,comp
+    return ship1,ship2,hit,miss,comp
 
 
-boat1 = [45,46,47]
-boat2 = [6,16,26]
+ship1 = [21,22,23,24]
+ship2 = [76,77,78,79]
 hit = []
 miss = []
 comp = []
 
-for i in range(10):
+for i in range(20):
     guesses = hit + miss + comp 
     shot = get_shot(guesses)
-    boat1,boat2,hit,miss,comp = check_shot(shot,boat1,boat2,hit,miss,comp)
+    ship1,ship2,hit,miss,comp = check_shot(shot,ship1,ship2,hit,miss,comp)
     show_board(hit,miss,comp)
 
-    if len(boat1) < 1 and len(boat2) < 1:
-        print("you've won")
+    if len(ship1) < 1 and len(ship2) < 1:
+        print("Winner!!")
         break
     print("finished")
