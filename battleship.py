@@ -2,23 +2,24 @@ def get_shot(guesses):
 
     ok = "n"
     while ok == "n":
-        try:
-            shot = input("Please enter ur guess?")
+        try:        # User Feedback
+            shot = input("Please enter ur guess to sink the Battleship from numbers(1-99)=")
             shot = int(shot)
             if shot < 0 or shot > 99:
-                print("Incorrect number, Please try again")
+                print("Incorrect number, Please try again!")
             elif shot in guesses:
-                print("Incorrect number, used before")
+                print("Incorrect number, used before!")
             else:
                 ok = 'y'
                 break
         except:
             print("Incorrect entry, Please enter again")
     return shot
-
+            # Game Board In terminal
 def show_board(hit,miss,comp):
-    print("         Battleships   ")
-    print("    0 1 2 3 4 5 6 7 8 9  ")
+    print("         Battleships Game - Total Attempts (20) ")
+    
+    print("     0  1  2  3  4  5  6  7  8  9   ")
 
 
     place = 0
@@ -26,17 +27,18 @@ def show_board(hit,miss,comp):
         row = ""
         for y in range(10):
             ch = " _ "
-            if place in miss:
+            if place in miss: # Too indicate a miss 
                 ch = " x "
-            elif place in hit:
+            elif place in hit: # Too indicate the ship
+                ch = " S "  
+            elif place in comp: # Too indicate the ship is complete 
                 ch = " s "
-            elif place in comp:
-                ch = " S "
 
             row = row + ch
             place = place + 1 
         print(x," ",row)
 
+        # Scanning across Gameboard 
 def check_shot(shot,ship1,ship2,hit,miss,comp):
 
     if shot in ship1:
@@ -67,7 +69,7 @@ for i in range(20):
     shot = get_shot(guesses)
     ship1,ship2,hit,miss,comp = check_shot(shot,ship1,ship2,hit,miss,comp)
     show_board(hit,miss,comp)
-
+        # End game Result
     if len(ship1) < 1 and len(ship2) < 1:
         print("Winner!!")
         break
