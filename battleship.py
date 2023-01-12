@@ -19,7 +19,7 @@ def get_shot(guesses):
     return shot
             # Game Board In terminal
 def show_board(hit ,miss ,comp):
-    print("         Battleships Game - Total Attempts (20) ")
+    print("         Sink the Battleship Game - Total Attempts (20) ")
     
     print("     0  1  2  3  4  5  6  7  8  9   ")
 
@@ -59,15 +59,16 @@ def check_shot(shot,ship1,ship2,hit,miss,comp):
         miss.append(shot)
     return ship1,ship2,hit,miss,comp
 
-startofShip = random.randrange(96)
+startofShipTwo = random.randrange(50,90)
+startofShip = random.randrange(46)
 ship1 = [startofShip,startofShip+1,startofShip+2,startofShip+3,startofShip+4]
-ship2 = [startofShip,startofShip+1,startofShip+2,startofShip+3]
+ship2 = [startofShipTwo,startofShipTwo+1,startofShipTwo+2,startofShipTwo+3]
 
 hit = []
 miss = []
 comp = []
 
-for i in range(60):
+for i in range(99):
     guesses = hit + miss + comp 
     shot = get_shot(guesses)
     ship1,ship2,hit,miss,comp = check_shot(shot,ship1,ship2,hit,miss,comp)
@@ -75,6 +76,3 @@ for i in range(60):
         # End game Result
     if len(ship1) < 1 and len(ship2) < 1:
         print("Winner!!")
-        break
-    print("finished")
-
