@@ -1,3 +1,5 @@
+# pylint: disable=invalid-name
+import random
 def get_shot(guesses):
 
     ok = "n"
@@ -16,7 +18,7 @@ def get_shot(guesses):
             print("Incorrect entry, Please enter again")
     return shot
             # Game Board In terminal
-def show_board(hit,miss,comp):
+def show_board(hit ,miss ,comp):
     print("         Battleships Game - Total Attempts (20) ")
     
     print("     0  1  2  3  4  5  6  7  8  9   ")
@@ -29,9 +31,9 @@ def show_board(hit,miss,comp):
             ch = " _ "
             if place in miss: # Too indicate a miss 
                 ch = " x "
-            elif place in hit: # Too indicate the ship
+            elif place in hit: # Too indicate the ship has been hit 
                 ch = " S "  
-            elif place in comp: # Too indicate the ship is complete 
+            elif place in comp: # Too indicate the ship is completed 
                 ch = " s "
 
             row = row + ch
@@ -57,14 +59,15 @@ def check_shot(shot,ship1,ship2,hit,miss,comp):
         miss.append(shot)
     return ship1,ship2,hit,miss,comp
 
+startofShip = random.randrange(96)
+ship1 = [startofShip,startofShip+1,startofShip+2,startofShip+3,startofShip+4]
+ship2 = [startofShip,startofShip+1,startofShip+2,startofShip+3]
 
-ship1 = [21,22,23,24]
-ship2 = [76,77,78,79]
 hit = []
 miss = []
 comp = []
 
-for i in range(20):
+for i in range(60):
     guesses = hit + miss + comp 
     shot = get_shot(guesses)
     ship1,ship2,hit,miss,comp = check_shot(shot,ship1,ship2,hit,miss,comp)
@@ -74,3 +77,4 @@ for i in range(20):
         print("Winner!!")
         break
     print("finished")
+
