@@ -34,10 +34,11 @@ struck, and will finish with a lowercase "s" when finished. If the location of w
 # Future Features
 * Allow users to adjust the amount of battleships they need to destroy which can adjust the number of attempts depending on grid size. 
 * Alow the user to adjust the grid size. 
+
 # Bugs
 
 Solved Bugs 
-* I had to make 2 seperate random.randrange to generate 2 ships to be located on the grid starting from ship1 (1-46) ship2 (48-99), Originally what the location of the ships pre set but i needd this to be generated everytime the game was reset.
+* I had to make 2 seperate random.randrange to generate 2 ships to be located on the grid starting from ship1 (1-46) ship2 (48-99), Originally what the location of the ships pre set but i needed this to be generated everytime the game was reset.
 
 
 # Testing 
@@ -45,10 +46,11 @@ Solved Bugs
  * 
 
 # Remaining Bugs 
-  * No bugs remaining. 
+  * No bugs remaining.
+   
   
 # Validator Testing 
-  *
+  * I used linter to test my python which i fixed a couple of issues but had to leave a couple of minor errors as i could not find logical feedback to fix these issues. The code works prefectly with these issues there.  
   
 
 # Deployment 
