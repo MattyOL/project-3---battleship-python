@@ -49,7 +49,7 @@ Solved Bugs
    
   
 # Validator Testing 
-  * I used linter to test my python which i fixed a couple of issues but had to leave a couple of minor errors as i could not find logical feedback to fix these issues. The code works prefectly with these minors underlining in the code.  
+  * I used linter PEP8 to test my python code where there was issues. 
   
 
 # Deployment 
