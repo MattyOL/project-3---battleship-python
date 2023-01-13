@@ -26,11 +26,14 @@ struck, and will finish with a lowercase "s" when finished. If the location of w
 <img width="428" alt="Screen Shot 2023-01-13 at 00 35 48" src="https://user-images.githubusercontent.com/111317260/212210943-b55c3a2e-4093-4a95-a5b6-2e7271ccc389.png">
 <img width="405" alt="Screen Shot 2023-01-13 at 00 36 37" src="https://user-images.githubusercontent.com/111317260/212210950-39f017c8-55d6-4692-8370-b4b3570e6ca7.png">
 
-* It also gives Prints Winner!! when the user has sunk all the battleships.
+* It also  Prints Winner!! when the user has sunk all the battleships ansd the game is over.
 <img width="97" alt="Screen Shot 2023-01-13 at 00 41 38" src="https://user-images.githubusercontent.com/111317260/212210962-fa84e143-bb2f-43d0-ac64-493148fc4bd9.png">
+# Completed Game 
+<img width="572" alt="Screen Shot 2023-01-13 at 00 51 04" src="https://user-images.githubusercontent.com/111317260/212212503-4d7cb9bd-b2e1-46d1-bb88-07dcccb815fb.png">
+
 
 
 
 # Future Features
-* Allow users to adjust the amount of battleships they need to destroy
-* Alow the user to adjust the grid size 
+* Allow users to adjust the amount of battleships they need to destroy which can adjust the number of attempts depending on grid size. 
+* Alow the user to adjust the grid size. 
