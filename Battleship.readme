@@ -1,7 +1,7 @@
 
 # Sink the Battleship's Game
-  * Live Game Link - https://pythonproject3.herokuapp.com/  
-Battleship is a python terminal game which the user needs to sink the enemies battleship by submitting numbers between 1/99.  
+  * Live Game Link -[Sink the Battleship](https://pythonproject3.herokuapp.com/
+  Battleship is a python terminal game which the user needs to sink the enemies battleship by submitting numbers between 1/99.  
 # How to play? 
 
 1. In this version , the player needs to enter numbers ranging from 1 to 99.
