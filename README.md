@@ -42,7 +42,7 @@ Solved Bugs
 
 # Testing 
  * Tested in my local terminal.
- * 
+ * Passed the code PEP8 linter and confirmed there are no prblems.
 
 # Remaining Bugs 
   * No bugs remaining.
@@ -54,6 +54,10 @@ Solved Bugs
 
 # Deployment 
   * This project was deployed using Code Institutes mock terminal for Heroku.
-  
+    * fork or clone this repository
+    * Create a new Heroku app
+    * Set the buildbacks to python and NodeJS in that order
+    * link Heroku app to the repository
+    * Click Deploy
 # Credits 
-  *
+  * Code Institute for the deployment terminal
