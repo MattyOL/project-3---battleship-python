@@ -1,6 +1,7 @@
 
 # Sink the Battleship's Game
-
+  * Live Link - https://mattyol.github.io/project-3-SinkTheBattleship-python/
+  
 Battleship is a python terminal game which the user needs to sink the enemies battleship by submitting numbers between 1/99.  
 # How to play? 
 
