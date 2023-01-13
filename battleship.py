@@ -65,7 +65,7 @@ def check_shot(shot,ship1,ship2,hit,miss,comp):
 
     # Generates random selection of numbers to create location for ship
 startofShip = random.randrange(46)    
-startofShipTwo = random.randrange(50,90)
+startofShipTwo = random.randrange(48,99)
 
 ship1 = [startofShip,startofShip+1,startofShip+2,startofShip+3,startofShip+4]
 ship2 = [startofShipTwo,startofShipTwo+1,startofShipTwo+2,startofShipTwo+3]
