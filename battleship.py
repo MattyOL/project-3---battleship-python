@@ -10,17 +10,21 @@ def get_shot(guesses):
             if shot < 0 or shot > 99:
                 print("Incorrect number, Please try again!")
             elif shot in guesses:
-                print("Incorrect number, used before!")
+                print("Incorrect number, This number was used before!")
             else:
                 ok = 'y'
                 break
         except:
-            print("Incorrect entry, Please enter again")
+            print("Incorrect entry, Please enter again!")
     return shot
             # Game Board In terminal
 def show_board(hit ,miss ,comp):
-    print("         Sink the Battleship Game - Total Attempts (20) ")
-    
+    print("--------------------------------------------------------------------")
+    print("       Sink the Battleship Game - Total Attempts (40) ")
+    print("-------------------  Game Instuctuons  -----------------------------")
+    print("        * Ships Hit ='S'/ Ships Commpleted ='s'/ Wrong Attempts ='X'")
+    print("        * Grid = rows + columns ranging from numbers 1-99 ")
+    print("--------------------------------------------------------------------")
     print("     0  1  2  3  4  5  6  7  8  9   ")
 
 
@@ -28,9 +32,9 @@ def show_board(hit ,miss ,comp):
     for x in range(10):
         row = ""
         for y in range(10):
-            ch = " _ "
+            ch = " - "
             if place in miss: # Too indicate a miss 
-                ch = " x "
+                ch = " X "
             elif place in hit: # Too indicate the ship has been hit 
                 ch = " S "  
             elif place in comp: # Too indicate the ship is completed 
@@ -59,16 +63,18 @@ def check_shot(shot,ship1,ship2,hit,miss,comp):
         miss.append(shot)
     return ship1,ship2,hit,miss,comp
 
+    # Generates random selection of numbers to create location for ship
+startofShip = random.randrange(46)    
 startofShipTwo = random.randrange(50,90)
-startofShip = random.randrange(46)
+
 ship1 = [startofShip,startofShip+1,startofShip+2,startofShip+3,startofShip+4]
 ship2 = [startofShipTwo,startofShipTwo+1,startofShipTwo+2,startofShipTwo+3]
 
 hit = []
 miss = []
 comp = []
-
-for i in range(99):
+  # Total attempts 
+for i in range(40):
     guesses = hit + miss + comp 
     shot = get_shot(guesses)
     ship1,ship2,hit,miss,comp = check_shot(shot,ship1,ship2,hit,miss,comp)
@@ -76,3 +82,4 @@ for i in range(99):
         # End game Result
     if len(ship1) < 1 and len(ship2) < 1:
         print("Winner!!")
+
