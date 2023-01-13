@@ -1,4 +1,3 @@
-# project-3---battleship-python
 
 # Sink the Battleship's Game
 
