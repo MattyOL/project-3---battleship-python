@@ -1,3 +1,4 @@
+# python code goes here
 
 import random
 def get_shot(guesses):
@@ -82,4 +83,3 @@ for i in range(40):
         # End game Result
     if len(ship1) < 1 and len(ship2) < 1:
         print("Winner!!")
-
