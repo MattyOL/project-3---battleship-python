@@ -28,7 +28,9 @@ struck, and will finish with a lowercase "s" when finished. If the location of w
 
 * It also  Prints Winner!! when the user has sunk all the battleships ansd the game is over.
 <img width="97" alt="Screen Shot 2023-01-13 at 00 41 38" src="https://user-images.githubusercontent.com/111317260/212210962-fa84e143-bb2f-43d0-ac64-493148fc4bd9.png">
+
 * Completed Game 
+
 <img width="572" alt="Screen Shot 2023-01-13 at 00 51 04" src="https://user-images.githubusercontent.com/111317260/212212503-4d7cb9bd-b2e1-46d1-bb88-07dcccb815fb.png">
 
 # Future Features
