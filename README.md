@@ -31,9 +31,28 @@ struck, and will finish with a lowercase "s" when finished. If the location of w
 # Completed Game 
 <img width="572" alt="Screen Shot 2023-01-13 at 00 51 04" src="https://user-images.githubusercontent.com/111317260/212212503-4d7cb9bd-b2e1-46d1-bb88-07dcccb815fb.png">
 
-
-
-
 # Future Features
 * Allow users to adjust the amount of battleships they need to destroy which can adjust the number of attempts depending on grid size. 
 * Alow the user to adjust the grid size. 
+# Bugs
+
+Solved Bugs 
+* I had to make 2 seperate random.randrange to generate 2 ships to be located on the grid starting from ship1 (1-46) ship2 (48-99), Originally what the location of the ships pre set but i needd this to be generated everytime the game was reset.
+
+
+# Testing 
+ * Tested in my local terminal.
+ * 
+
+# Remaining Bugs 
+  * No bugs remaining. 
+  
+# Validator Testing 
+  *
+  
+
+# Deployment 
+  * This project was deployed using Code Institutes ock terminal for Heroku.
+  
+# Credits 
+  *
