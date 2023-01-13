@@ -7,7 +7,7 @@ Battleship is a python terminal game which the user needs to sink the enemies ba
 
 1. In this version , the player needs to enter numbers ranging from 1 to 99.
 
-2. The player has a limited number of attempts (45), to sink the battleships if the user exceeds past the amount the game comes to an end.
+2. The player has a limited number of attempts (40), to sink the battleships if the user exceeds past the amount the game comes to an end.
 
 3. The user will guess numbers across the grid to try indicate the location of the ship , the symbol will begin with a capital "S" when a ship has been 
 struck, and will finish with a lowercase "s" when finished. If the location of were the user guessed is wrong the symbol will be marked with a capital "X" to show users attempt.
@@ -28,7 +28,7 @@ struck, and will finish with a lowercase "s" when finished. If the location of w
 
 * It also  Prints Winner!! when the user has sunk all the battleships ansd the game is over.
 <img width="97" alt="Screen Shot 2023-01-13 at 00 41 38" src="https://user-images.githubusercontent.com/111317260/212210962-fa84e143-bb2f-43d0-ac64-493148fc4bd9.png">
-# Completed Game 
+* Completed Game 
 <img width="572" alt="Screen Shot 2023-01-13 at 00 51 04" src="https://user-images.githubusercontent.com/111317260/212212503-4d7cb9bd-b2e1-46d1-bb88-07dcccb815fb.png">
 
 # Future Features
