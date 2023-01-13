@@ -28,7 +28,7 @@ def show_board(hit ,miss ,comp):
     print("--------------------------------------------------------------------")
     print("     0  1  2  3  4  5  6  7  8  9   ")
 
-
+    data_str = input("Enter your data here:\n")
     place = 0
     for x in range(10):
         row = ""
