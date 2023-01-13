@@ -38,7 +38,7 @@ struck, and will finish with a lowercase "s" when finished. If the location of w
 # Bugs
 
 Solved Bugs 
-* I had to make 2 seperate random.randrange to generate 2 ships to be located on the grid starting from ship1 (1-46) ship2 (48-99), Originally what the location of the ships pre set but i needed this to be generated everytime the game was reset.
+* I had to make 2 seperate random.randrange to generate 2 ships to be located on the grid starting from ship1 (1-46) ship2 (48-99), Originally the location of the ships were pre set but i needed this to be generated everytime the game was reset so the game could be changed everytime.
 
 
 # Testing 
@@ -50,11 +50,11 @@ Solved Bugs
    
   
 # Validator Testing 
-  * I used linter to test my python which i fixed a couple of issues but had to leave a couple of minor errors as i could not find logical feedback to fix these issues. The code works prefectly with these issues there.  
+  * I used linter to test my python which i fixed a couple of issues but had to leave a couple of minor errors as i could not find logical feedback to fix these issues. The code works prefectly with these minors underlining in the code.  
   
 
 # Deployment 
-  * This project was deployed using Code Institutes ock terminal for Heroku.
+  * This project was deployed using Code Institutes mock terminal for Heroku.
   
 # Credits 
   *
